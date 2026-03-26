@@ -21,7 +21,6 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 # Separate features and target
 X = df.drop('Outcome', axis=1)
 y = df['Outcome']
-
 # Scale the features
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
